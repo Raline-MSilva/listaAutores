@@ -18,7 +18,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         
 //        let autoresViewController = (window!.rootViewController as! UINavigationController)
-//            .topViewController as! AutoresViewController
+//            .topViewController as! AutorViewController
+        
+        let autorAPI = AutorAPI()
+        
+        let navigationController = window!.rootViewController as! UINavigationController
+        let controller = navigationController.viewControllers.first as! AutorViewController
+        
+        controller.autorAPI = autorAPI
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
