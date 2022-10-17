@@ -103,6 +103,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="5e6-Rz-e03" id="vsq-56-JK6"/>
+                                    <outlet property="delegate" destination="5e6-Rz-e03" id="7oT-Y4-I0n"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIO-5Q-M4U">
                                 <rect key="frame" x="348" y="728" width="42" height="42"/>
